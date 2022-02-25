@@ -5,9 +5,14 @@ class Movie {
     public $nomeFilm;
     public $nomeRegista;
 
+    function __construct($_age)
+    {
+        $this->age = $_age;
+    }
+
     function set_info($Film , $Regista)
     {
-        $this->nomeFilm = $Film."<br>";
+        $this->nomeFilm = $Film;
         $this->nomeRegista = $Regista;
     }
 
